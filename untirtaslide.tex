@@ -1,0 +1,102 @@
+%% Based on Bath_Beamer_Template by Nick McCullen, University of Bath
+%% Modified by Imamul Muttakin https://github.com/imuttakin
+
+\documentclass{beamer}
+\useoutertheme{infolines}\usefonttheme{structurebold}
+\beamertemplatenavigationsymbolsempty
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{slidebackgrounduntirta.pdf}}
+\definecolor{maroon}{rgb}{0.5,0.,0.}\setbeamercolor{structure}{fg=maroon}
+
+
+\title[Judul Singkat]
+{Judul Presentasi}
+\subtitle{Sub-judul}
+
+\author%
+{Nama~Pertama\inst{1} \and Nama~Kedua\inst{2}}
+\institute[Untirta] % (optional)
+{
+  \inst{1}%
+  Jurusan Teknik Elektro\\
+  Fakultas Teknik\\
+  Universitas Sultan Ageng Tirtayasa, ID
+  \and
+  \inst{2}%
+  Institusi\\
+  Tempat
+}
+\date[ICIEE 2020] % (optional)
+{Seminar, 2020}
+\subject{Topik}
+
+
+\begin{document}
+
+
+
+\frame{\titlepage}
+
+
+\begin{frame}
+\frametitle{Daftar Isi}
+\tableofcontents%[currentsection]
+\end{frame}
+
+
+\begin{frame}{Judul 0}
+
+Teks 0
+ 
+\end{frame}
+
+\section[]{Bagian 1}
+
+
+\begin{frame}
+\frametitle{Daftar Isi}
+\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Judul 1}
+
+Teks 1a
+
+\pause
+
+Teks 1b dengan catatan kaki \footnote{catatan}
+ 
+\end{frame}
+
+\section[]{Bagian 2}
+
+
+\begin{frame}
+\frametitle{Daftar Isi}
+\tableofcontents[currentsection]
+\end{frame}
+
+
+\begin{frame}{Judul 2}
+
+Teks 2 dengan rujukan \cite{Pemakalah2020}
+ 
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{Referensi}    
+  \begin{thebibliography}{10}    
+  \beamertemplatebookbibitems
+  \bibitem{Penulis1987}
+    N.~Penulis.
+    \newblock {\em Buku}.
+    \newblock Penerbit, 1987.
+  \beamertemplatearticlebibitems
+  \bibitem{Pemakalah2020}
+    N.~Pemakalah.
+    \newblock Artikel ini.
+    \newblock {\em Jurnal itu}, 1(1):10--10, 2020.
+  \end{thebibliography}
+\end{frame}
+
+\end{document}
