@@ -1,12 +1,18 @@
 %% Based on Bath_Beamer_Template by Nick McCullen, University of Bath
 %% Modified by Imamul Muttakin https://github.com/imuttakin
 
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 \useoutertheme{infolines}\usefonttheme{structurebold}
 \beamertemplatenavigationsymbolsempty
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{slidebackgrounduntirta.pdf}}
-\definecolor{maroon}{rgb}{0.5,0.,0.}\setbeamercolor{structure}{fg=maroon}
-
+\setbeamertemplate{frametitle}[default][center]
+\definecolor{blue}{RGB}{0,32,126}\setbeamercolor{structure}{fg=blue}
+\setbeamertemplate{footline}{
+    \LaTeX-untirta-v1 @imuttakin
+    \hspace{12.5cm}
+    \insertframenumber/\inserttotalframenumber
+    \vspace{0.6cm}
+}
 
 \title[Judul Singkat]
 {Judul Presentasi}
@@ -25,23 +31,18 @@
   Institusi\\
   Tempat
 }
-\date[ICIEE 2020] % (optional)
-{Seminar, 2020}
+\date[ICIEE 2021] % (optional)
+{Seminar, 2021}
 \subject{Topik}
-
 
 \begin{document}
 
-
-
 \frame{\titlepage}
-
 
 \begin{frame}
 \frametitle{Daftar Isi}
 \tableofcontents%[currentsection]
 \end{frame}
-
 
 \begin{frame}{Judul 0}
 
@@ -50,7 +51,6 @@ Teks 0
 \end{frame}
 
 \section[]{Bagian 1}
-
 
 \begin{frame}
 \frametitle{Daftar Isi}
@@ -69,19 +69,16 @@ Teks 1b dengan catatan kaki \footnote{catatan}
 
 \section[]{Bagian 2}
 
-
 \begin{frame}
 \frametitle{Daftar Isi}
 \tableofcontents[currentsection]
 \end{frame}
-
 
 \begin{frame}{Judul 2}
 
 Teks 2 dengan rujukan \cite{Pemakalah2020}
  
 \end{frame}
-
 
 \begin{frame}[allowframebreaks]
   \frametitle<presentation>{Referensi}    
